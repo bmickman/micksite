@@ -1,0 +1,193 @@
+<html>
+  <head>
+
+    <title>NYC Piano Tuning</title>
+    <meta charset="utf-8">
+    <meta name="description" content="New York's Affordable Piano Tuner">
+    <meta name="keywords" content="piano, tuner,tuning, technician, new york, nyc">
+    <meta name="language" content="EN">
+    <meta name="copyright" content="NYC Piano Tuning">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="NYC Piano Tuning" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="New York's Affordable Piano Tuner" />
+
+
+    <script src="js/aframe.js"></script>
+    <script src="js/textgeo.js"></script> 
+
+    <script src="js/layout.js"></script> 
+    <script src="js/cursor.js"></script> 
+
+    <style>
+    </style>
+  </head>
+  <body>
+    <a-scene fullscreen id="myscene" height="" width="">
+
+        <a-assets>
+                <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+
+            <img id="test" crossorigin="anonymous" src="times.jpg">
+            <img id="vio" crossorigin="anonymous" src="violin.png">
+            <img id="me" crossorigin="anonymous" src="me.jpg">
+            <img id="city" crossorigin="anonymous" src="city.jpg">
+            <img id="logo" crossorigin="anonymous" src="logo.png">
+            <img id="piano1" crossorigin="anonymous" src="piano1.jpg">
+            <img id="pianoroom" crossorigin="anonymous" src="pianoroom.jpg">
+            <img id="concerthall" crossorigin="anonymous" src="concerthall.jpg">
+            <img id="mozart" crossorigin="anonymous" src="mozart.png">
+
+          </a-assets>
+
+                   <a-entity position="0 1.8 -2">
+                     <a-entity camera look-controls mouse-cursor>
+                         <a-cursor fuse="true" color=""></a-cursor>
+                       </a-entity>
+                     </a-entity>
+
+                     <a-sky  src="#pianoroom" color="#1E8BC3" ></a-sky>
+
+
+                     <a-curvedimage src="#piano1"  
+                     height="6" radius="35" theta-length="30"
+                     position:"-5 1 -.5"       
+                     rotation="0 -5 0" 
+                     scale="10 15 -3"
+                     ></a-curvedimage>
+                     
+    <a-entity>
+      <a-camera>
+        <a-cursor>
+        </a-cursor>
+        <a-animation attribute="rotation"
+        dur="2000"
+        fill="forwards"
+        from="55 0 0"
+        to="0 0 0"
+        easing="ease-in-out"
+      ></a-animation>
+      </a-camera>
+    </a-entity>
+
+    <a-entity text-geometry="value:From $95; font: #optimerBoldFont; bevelThickness:10;"  position="2.3 1.6 -6.5" rotation="10 -30 0"></a-entity>
+
+    <a-entity text-geometry="value: Call Today!; font: #optimerBoldFont; bevelThickness:70; color:green;"  position="2.3 .9 -6.5" rotation="-10 -30 0"></a-entity>
+
+    <a-entity  position="-2.8 3.4 -3.5" rotation="25 30 0"  
+    text-geometry="bevelSize:50; bevelThickness:20; value:Brandon; font: #optimerBoldFont; color:orange;">
+    </a-entity>
+    <a-entity  position="-2.7 2.9 -3.5" rotation="25 30 0"  color="orange" 
+    text-geometry="bevelSize:50; bevelThickness:20; value: New York's; font: #optimerBoldFont;">
+    </a-entity>
+    <a-entity  position="-2.7 2.4 -3.5" rotation="25 30 0"  color="orange" 
+    text-geometry="bevelSize:50; bevelThickness:20; value:Piano Tuner!; font: #optimerBoldFont;">
+    </a-entity>
+
+    <a-text value="Call: 617-519-1141" position="-2.7 2.2 -3.5" rotation="20 30 0"></a-text>
+    <a-text value="Email: piano.mickman@gmail.com" position="-2.7 1.9 -3.5" rotation="15 30 0"></a-text>
+    <a-text value="Serving Manhattan, Queens, Brooklyn, Bronx" position="-2.7 1.6 -3.5" rotation="10 30 0"></a-text>
+
+      <a-text value="Use the WASD keys to move around!" position="-1.9 .6 -3" rotation="-20 30 0"></a-text>
+      <a-text value="copyright 2018" position="1 1.5 2.5" rotation="0  180 0" material="color: black; "></a-text>
+<!--
+      <a-entity v geometry="primitive: box"   material="shader: flat; " position="5 1 -3" link="href: layouttest.html; title: other page; image: #vio" rotation="0 -20 -15"></a-entity>
+
+      <a-entity v geometry="primitive: box"   material="shader: flat; " position="4 1 -4" link="href: index.html; title: Home Page; image: #test" rotation="0 -20 0"></a-entity>
+      <a-entity v geometry="primitive: box"   material="shader: flat; " position="3 1 -5" link="href: layouttest.html; title: other page; image: #vio" rotation="0 -20 15"></a-entity>
+-->
+
+      <a-entity layout="type: circle; radius: 7" position=" -.5 .5 -5 ">
+        <a-entity geometry="primitive: box" color="red" material="shader: flat; src: #vio; "   ></a-entity>
+      <a-entity>
+        <a-entity geometry="primitive: sphere" material="shader: flat; src: #piano1; color:purple;">
+
+        </a-entity>
+        <a-animation attribute="rotation"
+        dur="8000"
+        fill="forwards"
+        to="0 0 360"
+        repeat=""></a-animation>
+      </a-entity>
+
+        <a-entity geometry="primitive: box" material="shader: flat; src: #vio"></a-entity>
+        
+      <a-entity>
+        <a-entity geometry="primitive: sphere" material="shader: flat; src: #mozart; color:maroon;">
+        </a-entity>
+        <a-animation attribute="rotation"
+        dur="9000"
+        fill="forwards"
+        to="0 -360 0"
+        repeat=""
+        easing="ease-in-out"
+        ></a-animation>
+      </a-entity>
+
+        <a-entity geometry="primitive: box" material="shader: flat; src: #vio"></a-entity>
+    
+        <a-entity>
+        <a-entity geometry="primitive: sphere" material="shader: flat; src: #piano1; color:green;"></a-entity>
+        <a-animation attribute="rotation"
+        dur="12000"
+        fill="forwards"
+        to="0 0 360"
+        repeat=""></a-animation>
+      </a-entity>
+
+
+
+      <a-entity>
+        <a-entity geometry="primitive: box" material="shader: flat; src: #mozart; color:orange;">
+
+        </a-entity>
+        <a-animation attribute="rotation"
+        dur="17000"
+        fill="backwards"
+        to="360 0 360"
+        repeat=""></a-animation>
+      </a-entity>
+
+      <a-entity>
+        <a-entity geometry="primitive: sphere" material="shader: flat; src: #mozart; color: pink;">
+        </a-entity>
+        <a-animation attribute="rotation"
+        dur="9500"
+        fill="backwards"
+        to="0 -360 0"
+        repeat=""
+        easing="ease-in"
+        ></a-animation>
+      </a-entity>      </a-entity>
+
+
+                <!-- Red directional light shining from the top left. -->
+<a-light color="red" position="-1 1 0"></a-light>
+<!-- Blue point light, 5 meters in the air. -->
+<a-light type="point" color="blue" position="0 5 0"></a-light>
+<!-- Dim ambient lighting. -->
+<a-light type="ambient" color="green"></a-light>
+
+
+
+    </a-scene>
+    <div>
+        <p>
+            <h1>
+                yadayada
+            </h1>
+        </p>
+    </div>
+    <script>
+    
+        document.querySelector('#mysphere').addEventListener('click', function () {
+      this.setAttribute('material', 'color', 'red');
+      console.log('I was hovered!');
+    });
+        
+        
+        </script>
+  </body>
+</html>

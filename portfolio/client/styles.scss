@@ -1,0 +1,124 @@
+$primary: #F2784B;
+$second: #03C9A9;
+$third: #913D88;
+
+.card-deck > .card {
+  height: 730px; }
+
+#myjumbo{
+  width:100%;
+  border:20px solid $second;
+  border-radius:20px;
+}
+
+#topcont{
+margin-top:2%;
+padding-bottom:70px;
+background-color:black;
+padding:30px;
+margin-bottom:50px;
+}
+a, a:hover, a:focus {
+  text-decoration: none; }
+
+.card{box-shadow: 7px 7px 15px 3px grey;}
+
+.card > img {
+  opacity: 0.45;
+  filter: grayscale(40%);
+
+}
+
+.card > img:hover {
+  opacity: 1.0;
+  filter: grayscale(0%);
+  transition: opacity .2s ease-in-out;
+  transform: scale(1.01); }
+
+
+
+.mybtn {
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  color: $third; }
+
+.mybtn:hover {
+  -webkit-transform: rotate(720deg);
+  -moz-transform: rotate(720deg);
+  -o-transform: rotate(720deg);
+  transform: rotate(720deg);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  -o-border-radius: 5;
+  border-radius: 5;
+  -webkit-transition: all 1.2s ease-in-out;
+  -moz-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+  transition: all 1.2s ease-in-out;
+  color: $third; }
+
+.mybtn > h1 > a {
+  transition: all 0.6s ease-in-out;
+  color: $primary; }
+
+.mybtn > h1 > a:hover {
+  color: $third;}
+
+  #myimg{
+    width:auto;
+    float:left;
+    display:block;
+    height:250px;
+    border-radius:50px;
+    border:15px solid $primary;
+    background-color:$second;
+  }
+
+  #myabout{
+    padding-left:5%;
+    padding-top:10%;
+  }
+
+  @media (min-width: 992px) {
+      #myimg{
+        margin-left:30%;
+      }
+
+        #myabout{
+          padding-top:5%;
+        }
+   }
+
+
+
+.myheading {
+  font-weight: bold;
+  color:$third;
+  text-decoration: none;
+  text-shadow: 4.5px 5.5px 4.5px  $second;
+  transition: all .5s ease-in-out;
+
+}
+
+.myheading:hover {
+  color: $second;
+  text-shadow: .1px .1px .1px  $second;
+  transition: all .5s ease-in-out;
+}
+
+.card-text > a {
+  color: $primary;
+  font-weight: bold;
+}
+
+.card-text > a:hover {
+  color: $third;
+  font-weight: bold;
+}
+
+.tab-pane > p {
+  font-size: 130%;
+}
+
+li{font-size: 130%;}

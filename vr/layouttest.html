@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>My A-Frame Scene</title>
+        <script src="js/aframe.js"></script>
+        <script src="js/layout.js"></script> 
+        <script src="js/textgeo.js"></script> 
+        <script src="js/cursor.js"></script> 
+
+          </head>
+      
+      <body>
+        <a-scene fullscreen id="" height="" width="">
+
+                <a-assets>
+                  <img id="test" crossorigin="anonymous" src="times.jpg">
+                  <img id="vio" crossorigin="anonymous" src="violin.png">
+                  <img id="me" crossorigin="anonymous" src="me.jpg">
+                  <img id="city" crossorigin="anonymous" src="city.jpg">
+      
+
+                </a-assets>
+                <a-camera>
+                  <a-cursor>
+          
+                  </a-cursor>
+                </a-camera>
+                <a-sky  
+                src="#city" 
+                color="" 
+                metalness="5"
+                opacity="1.5"
+                radius="2000"
+                segments-height="50"
+                theta-length:"4">
+                </a-sky>
+
+                <a-entity geometry="primitive: box"   material="shader: flat; " position="4 1 -4" link="href: index.html; title: Home Page; image: #test" ></a-entity>
+                <a-entity geometry="primitive: sphere"   material="shader: flat; " position="3 1 -5" link="href: layouttest.html; title: other page; image: #vio"></a-entity>
+                    
+          <a-entity layout="type: circle; radius: 3" position=" -2 .5 -4 ">
+            <a-entity geometry="primitive: box" color="red" material ></a-entity>
+            <a-entity geometry="primitive: box" material></a-entity>
+            <a-entity geometry="primitive: box" material></a-entity>
+            <a-entity geometry="primitive: box" material></a-entity>
+            <a-entity geometry="primitive: box" material></a-entity>
+            <a-entity geometry="primitive: box" material></a-entity>
+            <a-entity geometry="primitive: box" material></a-entity>
+            <a-entity geometry="primitive: box" material></a-entity>
+          </a-entity>
+
+          <a-entity layout="type: circle; radius: 3" position=" -4 .8 -2.3 ">
+            <a-entity geometry="primitive: box" material></a-entity>
+            <a-entity geometry="primitive: box" material></a-entity>
+            <a-entity geometry="primitive: box" material></a-entity>
+            <a-entity geometry="primitive: box" material></a-entity>
+            <a-entity geometry="primitive: box" material></a-entity>
+            <a-entity geometry="primitive: box" material></a-entity>
+            <a-entity geometry="primitive: box" material></a-entity>
+            <a-entity geometry="primitive: box" material></a-entity>
+          </a-entity>
+
+          <a-torus color="red" arc="270" radius="5" radius-tubular="0.1"
+          position="0 -.5 -14"
+          metalness="1"
+          >
+          </a-torus>
+          <a-dodecahedron color="#FF926B" radius="5"
+          position="-4 2 -22"
+          metalness=".6"
+          >
+          </a-dodecahedron>
+
+          <!-- Red directional light shining from the top left. -->
+<a-light color="red" position="-1 1 0"></a-light>
+<!-- Blue point light, 5 meters in the air. -->
+<a-light type="point" color="blue" position="0 5 0"></a-light>
+<!-- Dim ambient lighting. -->
+<a-light type="ambient" color="green"></a-light>
+<a-camera></a-camera>
+
+        </a-scene>
+      </body>
+      </html>

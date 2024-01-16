@@ -1,0 +1,104 @@
+<html>
+  <head>
+
+    <title>Leprous | Malina</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Leprous">
+    <meta name="keywords" content="Leprous">
+    <meta name="language" content="EN">
+    <meta name="copyright" content="Leprous">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Leprous" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Leprous" />
+
+
+    <script src="aframe.js"></script>
+    <script src="cursor.js"></script> 
+
+    <style>
+    </style>
+  </head>
+
+  <body>
+    
+    <a-scene fullscreen id="myscene">
+        <a-assets>
+            <img id="starsred" crossorigin="anonymous" src="bigsky.png">
+            <img src="beigegrid.png" id="grid" crossorigin="anonymous" />
+            <img src="figure.png" id="fig" crossorigin="anonymous" />
+            <img src="lepmoon.png" id="moon" crossorigin="anonymous" />
+            <img src="moontexture.png" id="moontex" crossorigin="anonymous" />
+            <img src="malina2bb.png" id="structure1" crossorigin="anonymous" />
+            <img src="logolep.png" id="logolep" crossorigin="anonymous" />
+
+            <video id="price" src="flame.mp4" autoplay loop="true" playsinline="true" webkit-playsinline="true" crossorigin="anonymous">
+
+            </video>
+
+        </a-assets>
+        <a-sky  material="repeat:4 4;" src="#starsred" material="shader: flat;">
+
+        </a-sky>
+
+        <a-entity position="0 3 2" camera look-controls wasd-controls-enabled="true"></a-entity>
+        
+        <a-entity>
+            <a-light type="ambient"  position="0 3 1">
+
+            </a-light>
+        </a-entity>
+
+  
+        
+            <a-video src="#price" position="-6.5 4.5 -2.5" rotation="0 60 -10" width="7" height="4" >
+
+            </a-video>
+
+        
+        <a-entity geometry="primitive:plane;width:10000;height:10000" rotation="-90 45  0" 
+        material="src:#grid;repeat:10000 10000;transparent:true;metalness:0.6;roughness:0.4;sphericalEnvMap:#sky" 
+        position="0 0 0" scale="1 1 1" visible="true" mixin="null"></a-entity>
+
+        <a-entity>
+                <a-image src="#logolep"  position="6 4 -4.5" height="4" width="5" rotation="0 -60 10">
+    
+                </a-image>
+            </a-entity>
+
+        <a-entity  >
+            <a-image src="#structure1"  position="0 4.5 -5.5" height="9 " width="9">
+
+            </a-image>
+        </a-entity>
+
+        <a-entity  position="1 6.5 -9" rotation="35 25 -10">
+            <a-sphere
+            radius="2" 
+            segments-height="300"
+            src="#moontex"
+           
+            material= "repeat:6 6;">
+            
+            <a-animation attribute="rotation"
+            dur="30000"
+            fill="forwards"
+            to="0 360 0"
+            easing="linear"
+            repeat="repeat">
+            
+        </a-animation>
+
+            </a-sphere>
+        </a-entity>
+
+
+
+    </a-scene>
+  </body>
+
+  </html>>
+
+  

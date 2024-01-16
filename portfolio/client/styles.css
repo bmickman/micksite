@@ -1,0 +1,124 @@
+body {
+  background-color: black; }
+
+.card-deck > .card {
+  height: 730px; }
+
+#myjumbo {
+  margin-top: 2%;
+  margin-left: 2.5%;
+  width: 95%;
+  border: 15px solid #03C9A9;
+  border-radius: 20px;
+  background-color: black; }
+
+#topcont {
+  margin-top: 2%;
+  background-color: black; }
+
+a, a:hover, a:focus {
+  text-decoration: none; }
+
+.card {
+  box-shadow: 7px 7px 15px 3px grey; }
+
+.card > img {
+  opacity: 0.45;
+  filter: grayscale(40%); }
+
+.card > img:hover {
+  opacity: 1.0;
+  filter: grayscale(0%);
+  transition: opacity .2s ease-in-out;
+  transform: scale(1.01); }
+
+.mybtn {
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  color: #913D88; }
+
+.mybtn:hover {
+  -webkit-transform: rotate(720deg);
+  -moz-transform: rotate(720deg);
+  -o-transform: rotate(720deg);
+  transform: rotate(720deg);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 1.2s ease-in-out;
+  -moz-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+  transition: all 1.2s ease-in-out;
+  color: #913D88; }
+
+.mybtn > h1 > a {
+  transition: all 0.6s ease-in-out;
+  color: #F2784B; }
+
+.mybtn > h1 > a:hover {
+  color: #913D88; }
+
+#myimg {
+  width: auto;
+  float: left;
+  display: block;
+  height: 250px;
+  border-radius: 50px;
+  border: 15px solid #F2784B;
+  background-color: #03C9A9; }
+
+#myabout {
+  padding-left: 5%;
+  margin-top: 0px;
+  padding-top: 10%; }
+
+@media (min-width: 992px) {
+  #myimg {
+    margin-left: 30%; }
+  #myabout {
+    padding-top: 5%;
+    margin-top: -70px; }
+  .tab-pane > p {
+    font-size: 130%; }
+  li {
+    font-size: 130%; } }
+
+@media (max-width: 767px) {
+  .tab-pane > p {
+    font-size: 90%; }
+  li {
+    font-size: 90%; }
+  .card-deck > .card {
+    height: auto; } }
+
+@media (max-width: 991px) {
+  .tab-pane > p {
+    font-size: 100%; }
+  li {
+    font-size: 100%; } }
+
+.myheading {
+  font-weight: bold;
+  color: #913D88;
+  text-decoration: none;
+  text-shadow: 4.5px 5.5px 4.5px #03C9A9;
+  transition: all .5s ease-in-out; }
+
+.myheading:hover {
+  color: #03C9A9;
+  text-shadow: 0.1px 0.1px 0.1px #03C9A9;
+  transition: all .5s ease-in-out; }
+
+.card-text > a {
+  color: #F2784B;
+  font-weight: bold; }
+
+.card-text > a:hover {
+  color: #913D88;
+  font-weight: bold; }
+
+#mycontact > p {
+  text-align: center;
+  text-weight: bold; }
